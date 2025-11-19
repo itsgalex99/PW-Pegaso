@@ -16,7 +16,6 @@
       --focus: #ffd166;
     }
 
-    /* Reset di base e tipografia accessibile */
     *, *::before, *::after { box-sizing: border-box; }
     html:focus-within { scroll-behavior: smooth; }
     body {
@@ -106,7 +105,6 @@
       display: inline-block; margin-top: 0.5rem;
     }
 
-    /* Riduzione animazioni per chi preferisce meno movimento */
     @media (prefers-reduced-motion: reduce) {
       * { transition: none !important; animation: none !important; }
     }
@@ -127,18 +125,12 @@
       <div class="download-area" role="group" aria-labelledby="label-azione">
         <div>
           <p id="label-azione">Scarica il file come PDF. Il tasto qui sotto avvia direttamente il download nei browser che lo supportano.</p>
-
-          <!--
-            Sostituisci "documento.pdf" con il nome del tuo file.
-            Metti il file PDF nella stessa cartella di questa pagina (oppure aggiorna l'href con il percorso corretto).
-          -->
           <a
             class="download"
             href="Giacobbi_Alessandro_Mattia_0312200995.pdf"
             download
             aria-describedby="meta-file peso-file"
           >
-            <!-- Icona semplice in ASCII per restare solo su HTML/CSS; può essere sostituita con un'icona SVG -->
             <span aria-hidden="true">⬇️</span>
             <span>Scarica il PDF</span>
             <small id="peso-file" aria-label="Dimensione del file">(286&nbsp;KB)</small>
@@ -171,7 +163,6 @@
 		</p>
     </section>
 	<script>
-    // Solo per aggiornare dinamicamente l'anno nel footer (non necessario per il download)
     const anno = document.getElementById('anno-corrente');
     if (anno) anno.textContent = new Date().getFullYear();
   </script>
@@ -181,7 +172,6 @@
     Compila il breve sondaggio:
   </p>
 
-  <!-- IFRAME INCORPORATO -->
   <iframe
     title="Sondaggio utenti"
     src="https://docs.google.com/forms/d/e/1FAIpQLSf9ibZJtEBdH-KRjOmZiO8UIwA_2CCAgZpmMmzpMSKx90EWEA/viewform"
@@ -213,4 +203,5 @@
 
 </body>
 </html>
+
 
